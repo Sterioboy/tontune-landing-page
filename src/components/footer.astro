@@ -5,20 +5,20 @@ import type { FooterLink } from "~/types";
 
 const links: Array<FooterLink> = [
   {
-    url: "#",
+    url: "mailto:kirill.tontune@gmail.com",
     description: "Contact us!",
     icon: "mdi:email",
   },
   {
-    url: "#",
+    url: "https://t.me/+4yvablfvGm83YzVi",
     description: "Tontune on Telegram",
     icon: "mdi:telegram",
   },
-  {
+  /* {
     url: "#",
     description: "Tontune on Twitter",
     icon: "fa-brands:twitter",
-  },
+  }, */
 ];
 ---
 
@@ -26,7 +26,7 @@ const links: Array<FooterLink> = [
   <div class="absolute inset-0 overflow-hidden opacity-40">
     <HeroImage />
   </div>
-  <ul class="relative grid grid-cols-3 gap-4">
+  <ul class="relative grid grid-cols-2 gap-4">
     {
       links.map((link) => (
         <li>
